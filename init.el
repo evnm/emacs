@@ -2,9 +2,10 @@
 ;;; interfacing with ELPA, the package archive.
 ;;; Move this code earlier if you want to reference
 ;;; packages in your .emacs.
-(when
-    (load
-     (expand-file-name "~/.emacs.d/elpa/package.el"))
+(when (and
+       (file-exists-p "~/.emacs.d/elpa")
+       (load
+        (expand-file-name "~/.emacs.d/elpa/package.el")))
   (package-initialize))
 
 ; Emacs load path

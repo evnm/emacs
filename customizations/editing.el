@@ -5,7 +5,8 @@
       require-final-newline t)
 
 ; Wrap lines in a tasteful way
-(global-visual-line-mode 1)
+; NOTE: Only available in Emacs 23.
+;(global-visual-line-mode 1)
 
 ; Tab-width stuff
 (setq-default indent-tabs-mode nil)

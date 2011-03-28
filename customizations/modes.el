@@ -5,13 +5,21 @@
 (add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
 
 ; Ruby
-(add-hook 'ruby-mode-hook'(lambda ()
+(add-hook 'ruby-mode-hook '(lambda ()
   (local-set-key "\r" 'newline-and-indent)))
 (setq ruby-indent-tabs-mode nil)
+(setq auto-mode-alist (cons '("Rakefile" . ruby-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("Vagrantfile" . ruby-mode) auto-mode-alist))
 
 ; Python
 (add-hook 'python-mode-hook (lambda () (setq python-indent 2)))
 
 ; Javascript
 (add-to-list 'auto-mode-alist '("\\.js\\'" . espresso-mode))
+(add-to-list 'auto-mode-alist '("\\.json\\'" . espresso-mode))
 (setq espresso-indent-level 2)
+
+; Markdown
+(add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.mkd$" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))

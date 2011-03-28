@@ -1,8 +1,15 @@
-; TODO: Comment these.
-(setq show-paren-mode t
-      column-number-mode t
-      transient-mark-mode t
-      require-final-newline t)
+; Apply syntax highlighting to all buffers
+(global-font-lock-mode t)
+
+; Show column numbers in the mode line.
+(setq column-number-mode t)
+
+; Highlight selections
+(setq transient-mark-mode t)
+
+; Paren-matching with no delay
+(show-paren-mode t)
+(setq show-paren-delay 0)
 
 ; Wrap lines in a tasteful way
 ; NOTE: Only available in Emacs 23.
@@ -20,5 +27,5 @@
 (setq show-trailing-whitespace t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-; Apply syntax highlighting to all buffers
-(global-font-lock-mode t)
+; Silently put newline at EOF upon save
+(setq require-final-newline t)

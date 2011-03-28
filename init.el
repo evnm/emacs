@@ -26,6 +26,9 @@
                 haml-mode
                 markdown-mode))
 
+; Load third-party modes that the vendor function can't handle
+(add-to-list 'load-path "~/.emacs.d/vendor/scala")
+
 ; Load personal customizations
 (mapc 'load-directory '("~/.emacs.d/customizations"))
 

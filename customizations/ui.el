@@ -11,6 +11,9 @@
 ; Highlight current line
 ;(global-hl-line-mode t)
 
+; Don't show warning upon loading large files.
+(setq large-file-warning-threshold nil)
+
 ; Only enable color-theme when a windowing system is active.
 (when window-system
   (setq color-theme-is-global t)

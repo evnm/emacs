@@ -6,7 +6,7 @@
 
 ; Ruby
 (add-hook 'ruby-mode-hook '(lambda ()
-  (local-set-key "\r" 'newline-and-indent)))
+  (local-set-key (kbd "RET") 'newline-and-indent)))
 (setq ruby-indent-tabs-mode nil)
 (setq auto-mode-alist (cons '("Rakefile" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("Vagrantfile" . ruby-mode) auto-mode-alist))
@@ -27,3 +27,8 @@
 ; Scala
 (require 'scala-mode)
 (add-to-list 'auto-mode-alist '("\\.scala$" . scala-mode))
+(add-hook 'scala-mode-hook (lambda ()
+  (local-set-key (kbd "RET") (lambda ()
+    (interactive)
+    (scala-newline)
+    (scala-indent-line)))))

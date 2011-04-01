@@ -30,5 +30,8 @@
 (add-hook 'scala-mode-hook (lambda ()
   (local-set-key (kbd "RET") (lambda ()
     (interactive)
+    ; scala-indent-line checks last-command for repeated calls, so we must
+    ; set it to nil to prevent extra spaces.
+    (setq last-command nil)
     (scala-newline)
     (scala-indent-line)))))

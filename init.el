@@ -20,6 +20,7 @@
 
 ; Load third-party modes
 (mapc 'vendor '(color-theme
+                gist
                 android
                 espresso
                 sass-mode

@@ -7,3 +7,6 @@
 [submodule "vendor/haml-mode"]
 	path = vendor/haml-mode
 	url = git://github.com/nex3/haml-mode.git
+[submodule "vendor/scala-mode"]
+	path = vendor/scala-mode
+	url = git://github.com/haxney/scala-mode.git

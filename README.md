@@ -6,4 +6,4 @@ Influenced by (and in a few cases copied from) [al3x](https://github.com/al3x/em
 
 ## Installation
     cd
-    git clone git://github.com/evnm/emacs.git .emacs.d
+    git clone --recursive git://github.com/evnm/emacs.git .emacs.d

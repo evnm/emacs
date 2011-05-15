@@ -27,7 +27,8 @@
                 sass-mode
                 markdown-mode
                 scala-mode
-                thrift-mode))
+                thrift-mode
+                coffee-mode))
 
 ; Load personal customizations
 (mapc 'load-directory '("~/.emacs.d/customizations"))

@@ -26,9 +26,12 @@
 ; Don't show warning upon loading large files.
 (setq large-file-warning-threshold nil)
 
-; Only enable color-theme when a windowing system is active.
 (when window-system
+  ; Enable color-theme
   (setq color-theme-is-global t)
   (add-to-list 'load-path "~/.emacs.d/vendor/color-theme/themes")
   (require 'color-theme-wombat)
-  (color-theme-wombat))
+  (color-theme-wombat)
+
+  ; Run emacs as an edit server.
+  (server-start))

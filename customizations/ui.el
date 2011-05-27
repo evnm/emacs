@@ -13,6 +13,9 @@
 ; Don't load all themes by default
 (setq color-theme-load-all-themes nil)
 
+; Use Mensch as default font
+(set-face-attribute 'default nil :font "Mensch")
+
 ; Use smooth scrolling
 (require 'smooth-scrolling)
 

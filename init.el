@@ -29,7 +29,8 @@
                 scala-mode
                 thrift-mode
                 coffee-mode
-                sml-mode))
+                sml-mode
+                ruby-mode))
 
 ; Load personal customizations
 (mapc 'load-directory '("~/.emacs.d/customizations"))

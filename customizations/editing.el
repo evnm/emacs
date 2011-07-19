@@ -24,7 +24,7 @@
 (global-set-key (kbd "RET") 'newline-and-indent)
 
 ; Whitespace
-(setq show-trailing-whitespace t)
+(setq-default show-trailing-whitespace t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ; Silently put newline at EOF upon save

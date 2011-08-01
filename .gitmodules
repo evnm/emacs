@@ -10,3 +10,6 @@
 [submodule "vendor/coffee-mode"]
 	path = vendor/coffee-mode
 	url = git://github.com/defunkt/coffee-mode.git
+[submodule "vendor/writegood-mode"]
+	path = vendor/writegood-mode
+	url = git://github.com/bnbeckwith/writegood-mode.git

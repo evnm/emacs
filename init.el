@@ -21,6 +21,7 @@
 ; Load third-party modes
 (mapc 'vendor '(color-theme
                 gist
+                writegood-mode
                 android
                 espresso
                 haml-mode

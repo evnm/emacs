@@ -19,6 +19,9 @@
 (add-to-list 'auto-mode-alist '("\\.json\\'" . espresso-mode))
 (setq espresso-indent-level 2)
 
+; CSS
+(setq css-indent-offset 2)
+
 ; Markdown
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.mkd$" . markdown-mode))

@@ -13,3 +13,6 @@
 [submodule "vendor/writegood-mode"]
 	path = vendor/writegood-mode
 	url = git://github.com/bnbeckwith/writegood-mode.git
+[submodule "vendor/nyan-mode"]
+	path = vendor/nyan-mode
+	url = git://github.com/TeMPOraL/nyan-mode.git

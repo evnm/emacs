@@ -22,6 +22,7 @@
 (mapc 'vendor '(color-theme
                 gist
                 writegood-mode
+                nyan-mode
                 android
                 espresso
                 haml-mode

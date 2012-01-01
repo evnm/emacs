@@ -19,3 +19,6 @@
 [submodule "smex"]
 	path = vendor/smex
 	url = git://github.com/nonsequitur/smex.git
+[submodule "vendor/deft"]
+	path = vendor/deft
+	url = git://jblevins.org/git/deft.git

@@ -56,3 +56,8 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+; Deft
+(setq deft-directory "~/Dropbox/.deft")
+(setq deft-text-mode 'markdown-mode)
+(setq deft-use-filename-as-title t)

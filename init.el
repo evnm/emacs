@@ -22,6 +22,7 @@
 (mapc 'vendor '(color-theme
                 smex
                 gist
+                deft
                 writegood-mode
                 nyan-mode
                 android

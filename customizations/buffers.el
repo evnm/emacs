@@ -15,3 +15,5 @@
 
 ; Don't confirm opening non-existant files/buffers
 (setq confirm-nonexistent-file-or-buffer nil)
+
+(setq initial-scratch-message "")

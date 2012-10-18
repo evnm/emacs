@@ -10,6 +10,7 @@
 (setq ruby-indent-tabs-mode nil)
 (setq auto-mode-alist (cons '("Rakefile" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("Vagrantfile" . ruby-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("Capfile" . ruby-mode) auto-mode-alist))
 
 ; Python
 (add-hook 'python-mode-hook (lambda () (setq python-indent 2)))

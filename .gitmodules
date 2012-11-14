@@ -23,5 +23,5 @@
 	path = vendor/deft
 	url = git://jblevins.org/git/deft.git
 [submodule "vendor/scala-mode2"]
-	path = vendor/scala-mode2
+	path = vendor/scala-mode
 	url = git://github.com/hvesalai/scala-mode2.git

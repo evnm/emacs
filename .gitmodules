@@ -25,3 +25,6 @@
 [submodule "vendor/scala-mode2"]
 	path = vendor/scala-mode
 	url = git://github.com/hvesalai/scala-mode2.git
+[submodule "vendor/scala-mode"]
+	path = vendor/scala-mode
+	url = git://github.com/hvesalai/scala-mode2.git

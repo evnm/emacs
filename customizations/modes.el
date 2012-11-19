@@ -1,3 +1,6 @@
+; Enable full-screen button in OS X window chrome
+(menu-bar-mode t)
+
 ; text-mode
 (add-hook 'text-mode-hook (lambda () (setq tab-width 2)))
 
@@ -27,23 +30,6 @@
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.mkd$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
-
-; Scala
-(require 'scala-mode)
-(add-to-list 'auto-mode-alist '("\\.scala$" . scala-mode))
-(add-hook 'scala-mode-hook (lambda ()
-  (local-set-key (kbd "RET") (lambda ()
-    (interactive)
-    ; scala-indent-line checks last-command for repeated calls, so we must
-    ; set it to nil to prevent extra spaces.
-    (setq last-command nil)
-    (scala-newline)
-    (scala-indent-line)))))
-
-; ENSIME
-(add-to-list 'load-path "~/.emacs.d/vendor/ensime/elisp/")
-(require 'ensime)
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
 ; CoffeeScript
 (add-hook 'coffee-mode-hook (lambda ()

@@ -32,7 +32,7 @@
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 
 ; CoffeeScript
-(add-hook 'coffee-mode-hook (lambda ()
+(add-hook 'coffee-mode-hook '(lambda ()
   (interactive)
   (set (make-local-variable 'tab-width) 2)
   (local-set-key (kbd "RET") 'newline-and-indent)))

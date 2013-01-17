@@ -24,7 +24,7 @@
                 gist
                 deft
                 writegood-mode
-                nyan-mode
+                ;nyan-mode
                 android
                 espresso
                 haml-mode

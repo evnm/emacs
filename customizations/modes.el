@@ -48,3 +48,12 @@
 (setq deft-directory "~/Dropbox/.deft")
 (setq deft-text-mode 'markdown-mode)
 (setq deft-use-filename-as-title t)
+
+; Scala
+(add-hook 'scala-mode-hook '(lambda ()
+  (interactive)
+  (setq scala-indent:use-javadoc-style t)
+  (local-set-key (kbd "RET") '(lambda ()
+    (interactive)
+    (newline-and-indent)
+    (scala-indent:insert-asterisk-on-multiline-comment)))))

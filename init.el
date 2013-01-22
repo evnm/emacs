@@ -30,7 +30,7 @@
                 haml-mode
                 sass-mode
                 markdown-mode
-                scala-mode
+                scala-mode2
                 thrift-mode
                 coffee-mode
                 sml-mode

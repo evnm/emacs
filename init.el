@@ -34,7 +34,8 @@
                 thrift-mode
                 coffee-mode
                 sml-mode
-                ruby-mode))
+                ruby-mode
+                yaml-mode))
 
 ; Load personal customizations
 (mapc 'load-directory '("~/.emacs.d/customizations"))

@@ -1,8 +1,9 @@
-; Emacs load path
+; Emacs load paths
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/util")
 (add-to-list 'load-path "~/.emacs.d/vendor")
 (add-to-list 'load-path "~/.emacs.d/customizations")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 ; Load utilities
 (load "load-directory.el")
@@ -12,8 +13,11 @@
 (mapc 'vendor '(thrift-mode))
 
 ; Load package sources
+(require 'package)
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(when (< emacs-major-version 24)
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 
 ; Load personal customizations

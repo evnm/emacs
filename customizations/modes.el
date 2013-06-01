@@ -63,3 +63,6 @@
 (add-hook 'yaml-mode-hook
       '(lambda ()
         (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+
+; flyspell-mode
+(setq ispell-program-name "/usr/local/bin/aspell")

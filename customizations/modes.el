@@ -11,12 +11,15 @@
 (add-hook 'ruby-mode-hook '(lambda ()
   (local-set-key (kbd "RET") 'newline-and-indent)))
 (setq ruby-indent-tabs-mode nil)
-(setq auto-mode-alist (cons '("Rakefile" . ruby-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("Vagrantfile" . ruby-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("Capfile" . ruby-mode) auto-mode-alist))
+(setq ruby-insert-encoding-magic-comment nil)
+(add-to-list 'auto-mode-alist '("Rakefile" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Vagrantfile" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Capfile" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.gemspec" . ruby-mode))
 
 ; Python
 (add-hook 'python-mode-hook (lambda () (setq python-indent 2)))
+(add-to-list 'auto-mode-alist '("BUILD*" . python-mode))
 
 ; Javascript
 (add-to-list 'auto-mode-alist '("\\.js\\'" . espresso-mode))

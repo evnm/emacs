@@ -51,7 +51,7 @@
 (setq deft-directory "~/Dropbox/.deft")
 (setq deft-text-mode 'markdown-mode)
 (setq deft-use-filename-as-title t)
-(setq deft-auto-save-interval 10)
+(setq deft-auto-save-interval 0)
 
 ; Scala
 (add-hook 'scala-mode-hook '(lambda ()

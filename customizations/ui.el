@@ -23,6 +23,9 @@
 ; Don't show warning upon loading large files.
 (setq large-file-warning-threshold nil)
 
+; Don't show a toolbar
+(tool-bar-mode 0)
+
 (when window-system
   (load-theme 'wombat2 t)
 

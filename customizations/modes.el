@@ -91,3 +91,7 @@
 
 ; flyspell-mode
 (setq ispell-program-name "/usr/local/bin/aspell")
+
+; sh-mode
+(setq sh-basic-offset 2
+      sh-indentation 2)

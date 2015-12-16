@@ -22,9 +22,9 @@
 (add-to-list 'auto-mode-alist '("BUILD*" . python-mode))
 
 ; Javascript
-(add-to-list 'auto-mode-alist '("\\.js\\'" . espresso-mode))
-(add-to-list 'auto-mode-alist '("\\.json\\'" . espresso-mode))
-(setq espresso-indent-level 2)
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js-mode))
+(add-to-list 'auto-mode-alist '("\\.json\\'" . js-mode))
+(setq js-indent-level 2)
 
 ; CSS
 (setq css-indent-offset 2)

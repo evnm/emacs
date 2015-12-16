@@ -73,6 +73,17 @@
     (newline-and-indent)
     (scala-indent:insert-asterisk-on-multiline-comment)))))
 
+; Java
+;; Indent argument lists sanely.
+(add-hook 'java-mode-hook '(lambda ()
+                             (c-set-offset 'arglist-intro '+)))
+(c-set-offset 'arglist-cont
+              '(c-lineup-arglist-operators 0))
+(c-set-offset 'arglist-cont-nonempty
+              '(c-lineup-arglist-operators c-lineup-arglist))
+(c-set-offset 'arglist-close
+              '(c-lineup-close-paren))
+
 ; YAML
 (add-hook 'yaml-mode-hook
       '(lambda ()

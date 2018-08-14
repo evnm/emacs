@@ -2,7 +2,9 @@
 (add-to-list 'load-path "~/.emacs.d/util")
 (add-to-list 'load-path "~/.emacs.d/vendor")
 (add-to-list 'load-path "~/.emacs.d/customizations")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+
+(if (not (version<= emacs-version "24.1"))
+  (add-to-list 'custom-theme-load-path "~/.emacs.d/themes"))
 
 ; Load utilities
 (load "load-directory.el")

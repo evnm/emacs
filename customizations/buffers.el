@@ -1,5 +1,5 @@
 ; Use iswitchb-mode instead of builtin buffer list
-(iswitchb-mode 1)
+(ido-mode 1)
 
 ; Allow y/n responses instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)

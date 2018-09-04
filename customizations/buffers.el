@@ -1,4 +1,4 @@
-; Use iswitchb-mode instead of builtin buffer list
+; Use ido-mode instead of builtin buffer list
 (ido-mode 1)
 
 ; Allow y/n responses instead of yes/no

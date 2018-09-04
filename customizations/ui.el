@@ -29,8 +29,7 @@
 ; Don't show a toolbar
 (tool-bar-mode 0)
 
-(when window-system
-  (load-theme 'wombat2 t)
+(load-theme 'wombat2 t)
 
-  ; Run emacs as an edit server.
-  (server-start))
+; Run emacs as an edit server.
+(server-start)

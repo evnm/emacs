@@ -1,6 +1,9 @@
 ; Don't display the initial startup msg
 (setq inhibit-startup-message t)
 
+; Disable the menu bar.
+(menu-bar-mode -1)
+
 ; Disable any bell behavior
 (setq ring-bell-function 'ignore)
 

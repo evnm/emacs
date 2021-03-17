@@ -10,9 +10,6 @@
 (load "load-directory.el")
 (mapc 'load-directory '("~/.emacs.d/util"))
 
-; Load third-party modes
-(mapc 'vendor '(thrift-mode))
-
 ; Load package sources
 (require 'package)
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")

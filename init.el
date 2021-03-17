@@ -6,6 +6,9 @@
 (if (not (version<= emacs-version "24.1"))
   (add-to-list 'custom-theme-load-path "~/.emacs.d/themes"))
 
+; Increase GC threshold to reduce frequency of pauses.
+(setq gc-cons-threshold (* 10 1024 1024))
+
 ; Load utilities
 (load "load-directory.el")
 (mapc 'load-directory '("~/.emacs.d/util"))

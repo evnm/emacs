@@ -23,6 +23,8 @@
 ; Bind return to do same as C-j (return and indent)
 (global-set-key (kbd "RET") 'newline-and-indent)
 
+(global-set-key (kbd "C-a") #'crux-move-beginning-of-line)
+
 ; Whitespace
 (setq-default show-trailing-whitespace t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

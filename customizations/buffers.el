@@ -1,5 +1,9 @@
 ; Use ido-mode instead of builtin buffer list
 (ido-mode 1)
+(setq ido-everywhere 1)
+(setq ido-enable-flex-matching t)
+(require 'ido-completing-read+)
+(ido-ubiquitous-mode 1)
 
 ; Allow y/n responses instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)

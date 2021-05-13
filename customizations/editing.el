@@ -31,7 +31,3 @@
 
 ; Silently put newline at EOF upon save
 (setq require-final-newline t)
-
-; dabbrev settings
-(global-set-key (kbd "C-<tab>") 'dabbrev-expand)
-(define-key minibuffer-local-map (kbd "C-<tab>") 'dabbrev-expand)

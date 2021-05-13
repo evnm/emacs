@@ -89,8 +89,12 @@
       '(lambda ()
         (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
 
-; flyspell-mode
-(setq ispell-program-name "/usr/local/bin/aspell")
+; flycheck
+(require 'flycheck)
+(setq flycheck-highlighting-mode 'lines)
+(custom-set-faces
+ '(flycheck-error ((((class color)) (:underline "Red"))))
+ '(flycheck-warning ((((class color)) (:underline "Orange")))))
 
 ; sh-mode
 (setq sh-basic-offset 2

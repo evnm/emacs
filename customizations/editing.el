@@ -26,8 +26,8 @@
 (global-set-key (kbd "C-a") #'crux-move-beginning-of-line)
 
 ; Whitespace
+(global-whitespace-cleanup-mode)
 (setq-default show-trailing-whitespace t)
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ; Silently put newline at EOF upon save
 (setq require-final-newline t)

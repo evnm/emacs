@@ -21,3 +21,8 @@
 (setq confirm-nonexistent-file-or-buffer nil)
 
 (setq initial-scratch-message "")
+
+; Automatically save desktop on exit.
+(desktop-save-mode 1)
+
+(global-set-key (kbd "C-x C-g") 'projectile-find-file)

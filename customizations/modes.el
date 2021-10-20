@@ -172,3 +172,8 @@
 (setq company-minimum-prefix-length 1
       ;; default idle delay is 0.2.
       company-idle-delay 0)
+
+; zoom-mode
+(custom-set-variables
+ '(zoom-mode t)
+ '(zoom-size '(0.618 . 0.618)))
